@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>guess the number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="section_one_top">
+          <div class="maindiv">
+            <div class="headerdiv">
+              <div class="leftside">
+                <button class="again">Play Again</button>
+              </div>
+              <div class="rightside">
+                <p class="instruction">(BETWEEN 1 AND 20)</p>
+              </div>
+            </div>
+            <div class="guess_text_div">
+              <b class="guess_text">Guess My Number!</b>
+            </div>
+          </div>
+          <div class="guess_number">?</div>
+          <br />
+        </div>
+      </section>
+      <section>
+        <div class="section_two_top">
+          <div class="guess_number_div">
+            <div>
+              <input type="number" class="guess_num" />
+            </div>
+            <div class="check_button_div">
+              <button class="checkbutton">Check</button>
+            </div>
+          </div>
+          <div class="guessing_scores">
+            <div>
+              <div>
+                <p class="start_guessing">Start Guessing...</p>
+              </div>
+              <div class="scores_values">
+                <div class="score">
+                  <p>Score: <span class="score_value"></span></p>
+                </div>
+                <div class="highscore">
+                  <p>Highscore: <span class="highscore_value"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
