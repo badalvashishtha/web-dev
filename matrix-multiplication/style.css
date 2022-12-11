@@ -1,0 +1,59 @@
+body {
+  margin: 0px;
+  background-color: rgb(185, 255, 253);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.maindiv {
+  /* background-color: rgb(216, 164, 216); */
+  padding-top: 70px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.submitbtn {
+  /* height: 200px; */
+  /* background-color: rgb(248, 192, 248); */
+  text-align: center;
+  padding-bottom: 50px;
+}
+.submit_textarea1and2 {
+  cursor: pointer;
+  background-color: rgb(255, 163, 163);
+  font-size: 20px;
+  width: 250px;
+  height: 50px;
+}
+.submit_textarea1and2:hover {
+  background-color: rgb(255, 194, 194);
+  box-shadow: 10px 10px 10px 0px rgb(255, 142, 142);
+}
+.matrixMultiplication {
+  text-align: center;
+}
+.textarea3 {
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  height: 160px;
+  width: 360px;
+  border-radius: 12px;
+  border: 3px solid black;
+  background-color: rgb(194, 255, 206);
+}
+
+.matrix-input textarea:hover,
+.textarea3:hover {
+  background-color: rgb(216, 255, 221);
+  box-shadow: 15px 15px 15px 0px rgba(116, 228, 116, 4);
+}
+.matrix-input textarea {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 30px;
+  height: 140px;
+  width: 140px;
+  border-radius: 12px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(185, 255, 192);
+}
