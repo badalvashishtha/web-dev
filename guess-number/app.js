@@ -49,3 +49,17 @@ document.querySelector('.checkbutton').addEventListener('click', function () {
     }
   }
 })
+
+// for help button:
+document.querySelector('.helpbtn').addEventListener('click', function () {
+  document.querySelector('.modal').classList.remove('hidden');
+  document.querySelector('.overlay').classList.remove('hidden');
+})
+document.querySelector('.closinghelp').addEventListener('click', function () {
+  document.querySelector('.modal').classList.add('hidden');
+  document.querySelector('.overlay').classList.add('hidden');
+})
+document.querySelector('.overlay').addEventListener('click', function () {
+  document.querySelector('.modal').classList.add('hidden');
+  document.querySelector('.overlay').classList.add('hidden');
+})

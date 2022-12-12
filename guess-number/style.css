@@ -16,19 +16,19 @@ body {
 }
 .maindiv {
   width: 100%;
-  height: 240px;
+  height: 300px;
 }
 .headerdiv {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100px;
+  height: 90px;
 }
 .leftside {
   position: relative;
 }
 .again {
   position: absolute;
-  top: 60px;
+  top: 20px;
   left: 40px;
   bottom: 0px;
   width: 120px;
@@ -40,19 +40,66 @@ body {
   font-size: large;
 }
 .again:hover,
-.checkbutton:hover {
+.checkbutton:hover,
+.helpbtn:hover {
   background-color: rgb(101, 196, 255);
   opacity: 0.7s;
   transition: background-color 0.3s;
   box-shadow: 6px 6px 5px rgba(141, 206, 247, 0.2);
 }
+.helpbtn:active,
 .again:active,
 .checkbutton:active {
   background-color: rgb(206, 236, 255);
 }
-
 .rightside {
   position: relative;
+}
+.helpbtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 30px;
+  width: 80px;
+  background-color: rgb(129, 197, 240);
+  border: solid;
+  border-color: rgb(160, 212, 245);
+  border-radius: 3px;
+  font-size: large;
+}
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  height: 500px;
+  width: 70%;
+  border-radius: 5px;
+  color: #0a0302;
+  background-color: rgb(145, 241, 211);
+  z-index: 10;
+}
+.closinghelp {
+  position: absolute;
+  top: 10px;
+  font-size: 35px;
+  border: none;
+  background: none;
+  right: 20px;
+}
+.helptextcontent {
+  margin: 40px;
+  padding: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(7px);
 }
 .instruction {
   position: absolute;
@@ -61,8 +108,8 @@ body {
 }
 .guess_text_div {
   position: relative;
-  height: 60px;
-  top: 70px;
+  height: 160px;
+  top: 40px;
 }
 .guess_text {
   font-size: 50px;
@@ -81,29 +128,29 @@ body {
   font-size: 80px;
 }
 .section_two_top {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-top: 30px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.guess_number_div {
-  padding-left: 20px;
-}
+/* .guess_number_div { */
+/* padding-left: 20px; */
+/* } */
 .guess_num {
   background-color: rgb(253, 231, 253);
   border: solid;
   border-radius: 3px;
   border-color: rgb(255, 255, 255);
-  margin: 40px;
+  margin-top: 40px;
   width: 70px;
   text-align: center;
   height: 70px;
   font-size: 40px;
-  padding: 10px 40px;
+  padding: 10px 30px;
 }
 .check_button_div {
-  padding: 40px;
+  padding: 30px;
 }
 .checkbutton {
   font-size: large;
@@ -115,9 +162,9 @@ body {
   border-radius: 3px;
 }
 .guessing_scores {
-  margin-right: 50px;
+  /* margin-right: 50px; */
   text-align: left;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .start_guessing {
