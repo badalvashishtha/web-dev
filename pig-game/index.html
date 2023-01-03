@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <div class="header_Div">
+        <button class="help_btn"> ⠇</button>
+        <div class="body_main_div">
+          <button class="new_game"><big>🔄 NEW GAME</big></button>
+          <img class="dice_img" src="dice-1.png" >
+          <button class="roll_dice"><big>🎲 ROLL DICE</big></button>
+          <button class="hold"><big>📥 HOLD</big></button>
+          <div class="player0_main active_player">
+            <div class="player0_title"><h1>PLAYER 1</h1></div>
+            <div class="score_0"><h1>0</h1></div>
+            <div class="current_score_0">
+              <p><h1>Current</h1></p><br>
+              <span class="current_score_value_0" ><h1>0</h1> </span>
+            </div>
+          </div>
+          <div class="player1_main">
+            <div class="player1_title"><h1>PLAYER 2</h1></div>
+            <div class="score_1"><h1>0</h1></div>
+            
+            <div class="current_score_1">
+              <p><h1>Current</h1></p> <br>
+              <span class="current_score_value_1" ><h1>0</h1> </span>
+            </div>
+          </div>
+        </div>
+      </di>
+      <div class="help_main hidden">
+        <div class="close_help">
+          <button class="close_btn">&times;</button>
+        </div>
+        <div class="help_heading">
+          <h3>
+            how to play this game?
+          </h3>
+        </div>
+          <br>
+          <p class="help_text">
+            Player 1 starts the game and rolls the dice repeatedly. <br>
+            Player's turns will end if they press HOLD or get dice value 1. <br>    
+            If dice gives 1  then current score of that player will be 0. <br>
+            if player click on the hold, then current score will added to the final score. <br>
+            player whose final score is equal or more than 100 first will win the match .
+          </p>
+        </div>
+        <div class="overlay hidden"></div>
+    </main>
+  </body>
+  <script src="/Pig Game/app.js"></script>
+</html>

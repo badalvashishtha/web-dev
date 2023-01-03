@@ -1,0 +1,153 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+.header_Div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body_main_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 90px;
+  margin-right: 6%;
+  margin-left: 6%;
+  margin-bottom: 90px;
+  background-color: rgb(206, 130, 168);
+}
+.active_player {
+  background-color: rgb(233, 179, 206);
+}
+.player0_main,
+.player1_main {
+  width: 50%;
+}
+.player0_title,
+.player1_title {
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+.score_0,
+.score_1 {
+  color: rgb(214, 81, 81);
+  font-size: 50px;
+  padding-bottom: 230px;
+}
+.current_score_0,
+.current_score_1 {
+  height: 120px;
+  border-radius: 6px;
+  background-color: rgb(255, 103, 103);
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-bottom: 100px;
+}
+.current_score_value_0,
+.current_score_value_1 {
+  font-size: 30px;
+}
+.new_game,
+.roll_dice,
+.hold {
+  background-color: rgb(213, 75, 144);
+  position: absolute;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+}
+.new_game {
+  width: 170px;
+  margin-top: 25px;
+}
+.roll_dice {
+  width: 150px;
+  margin-top: 350px;
+}
+.hold {
+  width: 130px;
+  margin-top: 580px;
+}
+
+.dice_img {
+  position: absolute;
+  margin-top: 230px;
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+}
+.hold:active,
+.new_game:active,
+.roll_dice:active {
+  background-color: rgb(214, 94, 154);
+}
+
+.winner {
+  color: white;
+  background-color: rgb(16, 18, 20);
+}
+/* help button */
+
+.help_btn {
+  position: absolute;
+  padding-left: 8px;
+
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  border-radius: 15px;
+  background-color: rgb(150, 51, 67);
+  /* background-color: rgb(233, 162, 203); */
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  border: none;
+}
+.help_main {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  margin: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 80%;
+  background-color: rgb(177, 93, 93);
+  /* text-align: center; */
+  position: absolute;
+  top: 20px;
+  border-radius: 15px;
+  color: black;
+  z-index: 10;
+}
+.help_text {
+  width: 100%;
+}
+.close_help {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: azure;
+}
+.close_btn {
+  background-color: rgb(177, 93, 93);
+  border: none;
+  font-size: 40px;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(7px);
+}
+.hidden {
+  display: none;
+}
